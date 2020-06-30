@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        >
+
+    <FrameLayout
+        android:id="@+id/testFL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/control_bar"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="76dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true">
+
+
+        <Button android:id="@+id/shutter_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Capture"
+            android:onClick="capture"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+<!-- From: file:/Users/mif2019/Dropbox/Photog6/app/src/main/res/layout/activity_test_frame.xml -->

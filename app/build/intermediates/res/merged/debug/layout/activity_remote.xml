@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<FrameLayout
+        android:id="@+id/remoteFrameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/control_bar"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="76dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout android:id="@+id/camera_switch_set"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <Button android:id="@+id/gallery"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Gllry"
+                android:onClick="openGallery"/>
+
+
+            <Button android:id="@+id/restartPCallback"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Start Prv"
+                android:onClick="restartPCallback"/>
+
+
+            <Button android:id="@+id/button_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="Take Pic!"
+                android:onClick="capture"/>
+            <ToggleButton
+                android:id="@+id/flash"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textOn="Flash Off"
+                android:textOff="Flash On"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/control_bar"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:layout_height="match_parent"
+        android:layout_width="76dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        >
+
+        <LinearLayout android:id="@+id/camera_switch_set"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:alpha=".25">
+
+            <ToggleButton
+                android:id="@+id/flash"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textOn="Flash Off"
+                android:textOff="Flash On"/>
+
+            <Button android:id="@+id/button_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="Take Pic!"
+                android:onClick="capture"/>
+
+            <Button android:id="@+id/gallery"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Gllry"
+                android:onClick="openGallery"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+<!-- From: file:/Users/mif2019/Dropbox/Photog6/app/src/main/res/layout/activity_remote.xml -->
